@@ -4,7 +4,7 @@
 
 ## 安装
 ```shell
-npm install element-ui -S
+npm install lgsn-ui --save
 ```
 
 ## 使用方式
@@ -14,7 +14,7 @@ import lgsn from 'lgsn-ui'
 
 Vue.use(lgsn)
 
-// or
+// 或者
 import {
   GCalendar,
   // ...

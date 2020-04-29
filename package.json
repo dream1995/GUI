@@ -1,8 +1,8 @@
 {
-  "name": "95-ui",
-  "version": "1.0.0",
+  "name": "lgsn-ui",
+  "version": "1.0.3",
   "description": "from Vue2.0",
-  "main": "index.js",
+  "main": "lib/lgsn-ui.common.js",
   "scripts": {
     "build:file": "node build/bin/build-entry.js",
     "dev": "npm run build:file && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js",
@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dream1995/GUI.git"
+    "url": "git+https://github.com/lgsn/GUI.git"
   },
   "keywords": [
     "Vue",
     "component"
   ],
-  "author": "Guan95",
+  "author": "lgsn",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dream1995/GUI/issues"

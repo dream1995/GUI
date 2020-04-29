@@ -29,9 +29,9 @@
       ],
       "plugins": [
         ["module-resolver", {
-          "root": ["g-ui"],
+          "root": ["lgsn-ui"],
           "alias": {
-            "g-ui/src": "g-ui/lib"
+            "lgsn-ui/src": "lgsn-ui/lib"
           }
         }]
       ]

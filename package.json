@@ -1,6 +1,6 @@
 {
   "name": "lgsn-ui",
-  "version": "1.0.3",
+  "version": "1.0.51",
   "description": "from Vue2.0",
   "main": "lib/lgsn-ui.common.js",
   "scripts": {
@@ -16,18 +16,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lgsn/GUI.git"
+    "url": "git+https://github.com/lgsn/lgsn-ui"
   },
   "keywords": [
     "Vue",
     "component"
   ],
   "author": "lgsn",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dream1995/GUI/issues"
+    "url": "https://github.com/lgsn/lgsn-ui/issues"
   },
-  "homepage": "https://github.com/dream1995/GUI#readme",
+  "homepage": "https://github.com/lgsn/lgsn-ui",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

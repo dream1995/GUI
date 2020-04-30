@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-     12312
-  </div>
+    <div id="app is-component">
+        <router-view class=""></router-view>
+    </div>
 </template>
 
 <script>

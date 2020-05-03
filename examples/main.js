@@ -3,10 +3,19 @@ import app from './app';
 import routes from './router';
 import VueRouter from 'vue-router';
 import hljs from 'highlight.js';
+import LgsnUI from 'main/index.js';
+import lgsnHead from './pages/lgsn-head';
+import lgsnMenu from './pages/lgsn-menu';
+import lgsnDome from './pages/lgsn-dome';
 
 import './assets/common.css';
 
 Vue.use(VueRouter);
+Vue.use(LgsnUI);
+
+Vue.component(lgsnHead.name, lgsnHead);
+Vue.component(lgsnMenu.name, lgsnMenu);
+Vue.component(lgsnDome.name, lgsnDome);
 
 const router = new VueRouter({
   mode: 'hash',
@@ -16,7 +25,7 @@ const router = new VueRouter({
 
 router.afterEach(route => {
   Vue.nextTick(() => {
-    const blocks = document.querySelectorAll('pre code');
+    const blocks = document.querySelectorAll('pre code:not(.hljs)');
     Array.prototype.forEach.call(blocks, hljs.highlightBlock);
   });
 });

@@ -1,5 +1,5 @@
 <template>
-    <div>组件：calendar</div>
+    <div class="lgsn-calendar">来自组件：calendar</div>
 </template>
 
 <script>
@@ -7,3 +7,9 @@
     name: 'g-calendar'
   };
 </script>
+
+<style lang="scss" scoped>
+    .lgsn-calendar{
+
+    }
+</style>

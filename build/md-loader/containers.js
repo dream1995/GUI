@@ -1,21 +1,21 @@
 const mdContainer = require('markdown-it-container');
 
 module.exports = md => {
-  md.use(mdContainer, 'demo', {
+  md.use(mdContainer, 'lgsn', {
     validate(params) {
-      return params.trim().match(/^demo\s*(.*)$/);
+      return params.trim().match(/^lgsn\s*(.*)$/);
     },
     render(tokens, idx) {
-      const m = tokens[idx].info.trim().match(/^demo\s*(.*)$/);
+      const m = tokens[idx].info.trim().match(/^lgsn\s*(.*)$/);
       if (tokens[idx].nesting === 1) {
         const description = m && m.length > 1 ? m[1] : '';
         const content = tokens[idx + 1].type === 'fence' ? tokens[idx + 1].content : '';
-        return `<demo-block>
+        return `<lgsn-dome>
         ${description ? `<div>${md.render(description)}</div>` : ''}
-        <!--element-demo: ${content}:element-demo-->
+        <!--lgsn-dome: ${content}:lgsn-dome-->
         `;
       }
-      return '</demo-block>';
+      return '</lgsn-dome>';
     }
   });
 

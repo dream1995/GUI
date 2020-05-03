@@ -29,11 +29,9 @@ fileList
         var code = result.code;
 
         code = code
-          .replace('define(\'', 'define(\'element/locale/')
-          .replace('global.', 'global.ELEMENT.lang = global.ELEMENT.lang || {}; \n    global.ELEMENT.lang.');
+          .replace('define(\'', 'define(\'lgsn/locale/')
+          .replace('global.', 'global.lgsn.lang = global.lgsn.lang || {}; \n    global.lgsn.lang.');
         save(resolve(__dirname, '../../lib/umd/locale', file)).write(code);
-
-        console.log(file);
       }
     });
   });

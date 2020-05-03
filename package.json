@@ -10,6 +10,8 @@
     "build:theme": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
     "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
     "build:umd": "node build/bin/build-locale.js",
+    "dome": "echo Guan",
+    "deploy": "npm run build:file && cross-env NODE_ENV=production webpack --config build/webpack.demo.js",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
     "lint": "eslint src/**/* test/**/* packages/**/* build/**/* --quiet",
     "dist": "npm run clean && npm run build:file && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
@@ -33,6 +35,7 @@
   },
   "homepage": "https://github.com/lgsn/lgsn-ui",
   "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -44,6 +47,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-regenerator-runtime": "^6.5.0",
+    "transliteration": "^1.1.11",
     "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
     "eslint": "4.18.2",
@@ -51,14 +55,14 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-html": "^4.0.1",
     "eslint-plugin-json": "^1.2.0",
-    "highlight.js": "^10.0.1",
+    "highlight.js": "^9.3.0",
     "html-webpack-plugin": "^4.2.1",
     "json-templater": "^1.2.0",
-    "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.7",
+    "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^5.0.2",
     "markdown-it-chain": "^1.3.0",
     "markdown-it-container": "^2.0.0",
-    "mini-css-extract-plugin": "^0.9.0",
+    "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.14.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "progress-bar-webpack-plugin": "^2.1.0",
@@ -66,8 +70,9 @@
     "style-loader": "^1.2.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "uppercamelcase": "^3.0.0",
+    "url-loader": "^1.0.1",
     "vue": "^2.6.11",
-    "vue-loader": "^15.9.1",
+    "vue-loader": "^15.7.0",
     "vue-router": "^3.1.6",
     "vue-template-compiler": "2.6.11",
     "vue-template-es2015-compiler": "^1.6.0",
@@ -77,7 +82,6 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "babel-helper-vue-jsx-merge-props": "^2.0.3",
-    "transliteration": "^2.1.8"
+    "babel-helper-vue-jsx-merge-props": "^2.0.3"
   }
 }

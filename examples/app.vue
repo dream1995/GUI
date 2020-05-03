@@ -1,6 +1,7 @@
 <template>
-    <div id="app is-component">
-        <router-view class=""></router-view>
+    <div id="app">
+        <lgsn-head></lgsn-head>
+        <router-view></router-view>
     </div>
 </template>
 

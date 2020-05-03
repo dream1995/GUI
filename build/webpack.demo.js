@@ -42,7 +42,7 @@ const webpackConfig = {
   },
   devServer: {
     host: '0.0.0.0',
-    port: 8085,
+    port: 8087,
     publicPath: '/',
     hot: true
   },
@@ -117,7 +117,7 @@ const webpackConfig = {
     new HtmlWebpackPlugin({
       template: './examples/index.tpl',
       filename: './index.html',
-      favicon: ''
+      favicon: './examples/favicon.ico'
     }),
     new ProgressBarPlugin(),
     new VueLoaderPlugin(),

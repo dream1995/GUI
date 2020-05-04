@@ -1,6 +1,6 @@
 {
   "name": "lgsn-ui",
-  "version": "1.0.592",
+  "version": "1.0.593",
   "description": "from Vue2.0",
   "main": "lib/lgsn-ui.common.js",
   "scripts": {

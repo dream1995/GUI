@@ -157,7 +157,6 @@ if (isProd) {
     }),
     new OptimizeCSSAssetsPlugin({})
   );
-  // https://webpack.js.org/configuration/optimization/#optimizationsplitchunks
   webpackConfig.optimization.splitChunks = {
     cacheGroups: {
       vendor: {

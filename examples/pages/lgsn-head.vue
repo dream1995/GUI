@@ -30,6 +30,7 @@
         position: fixed;
         left: 0;
         top: 0;
+        z-index: 99999;
         .lgsn-logo {
             padding-left: 20px;
             width: 140px;

@@ -8,6 +8,8 @@ import lgsnHead from './pages/lgsn-head';
 import lgsnMenu from './pages/lgsn-menu';
 import lgsnDome from './pages/lgsn-dome';
 
+import 'packages/component-css/src/index.scss';
+import './packages-styles/index.scss';
 import './assets/common.css';
 
 Vue.use(VueRouter);

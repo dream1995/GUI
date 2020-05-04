@@ -30,10 +30,7 @@
 <style lang="scss" scoped>
     .lgsn-menu{
         width:260px;
-        height: 100%;
-        max-height: 100vh;
         padding-left:40px;
-        border-right: 1px  #f0f0f0 solid;
         & .menu-title{
             color: #000;
             & li{

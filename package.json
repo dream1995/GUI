@@ -1,6 +1,6 @@
 {
   "name": "lgsn-ui",
-  "version": "1.0.7",
+  "version": "1.0.71",
   "description": "from Vue2.0",
   "main": "lib/lgsn-ui.common.js",
   "scripts": {
@@ -86,5 +86,8 @@
   "dependencies": {
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "rimraf": "^6.0.1"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }

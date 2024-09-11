@@ -7,3 +7,6 @@ npm i lgsn-ui --save
 ```
 
 ### CDN
+```shell
+不支持
+```

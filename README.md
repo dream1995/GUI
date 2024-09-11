@@ -10,16 +10,8 @@ npm install lgsn-ui --save
 ## 使用方式
 ``` javascript
 import Vue from 'vue'
-import lgsn from 'lgsn-ui'
+import LgsnUI from 'lgsn-ui'
 import 'lgsn-ui/lib/component-css/index.css'
 
-Vue.use(lgsn)
+Vue.use(LgsnUI)
 
-// 或者
-import {
-  LgsnCalendar,
-  // ...
-} from 'lgsn-ui'
-
-Vue.component(LgsnCalendar.name, LgsnCalendar)
-```

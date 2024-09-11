@@ -11,7 +11,7 @@ npm install lgsn-ui --save
 ``` javascript
 import Vue from 'vue'
 import lgsn from 'lgsn-ui'
-import 'lgsn-ui/component/src/index.css'
+import 'lgsn-ui/lib/component-css/index.css'
 
 Vue.use(lgsn)
 

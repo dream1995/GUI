@@ -6,11 +6,11 @@
 :::lgsn
 ```html
     <template>
-        <g-calendar :height="400" :calData="dataDome">
+        <lgsn-calendar :height="400" :calData="dataDome">
                 <template #title>
                     日历表
                 </template>
-            </g-calendar>
+            </lgsn-calendar>
     </template>
     <script>
         
@@ -106,11 +106,11 @@
          }
     </style>
     <template>
-        <g-calendar :height="400" :calData="dataDome" :tipsY="false">
+        <lgsn-calendar :height="400" :calData="dataDome" :tipsY="false">
                 <template #content="card">
                     <div :class="card.money > 600 ? 'calendar-rise' : 'calendar-drop'">{{card.label}}</div>
                 </template>
-            </g-calendar>
+            </lgsn-calendar>
     </template>
     <script>
         

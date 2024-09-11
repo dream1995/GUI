@@ -23,7 +23,6 @@
           <span class="y-axis-text">{{ xItem.label }}</span>
         </div>
       </div>
-
       <div
         class="calendar-contation"
         @scroll="scrollEvent"
@@ -76,32 +75,32 @@
 </template>
 
 <script>
-import { getMonth } from "lgsn-ui/src/utils/date.js";
+import { getMonth } from 'lgsn-ui/src/utils/date.js';
 
 export default {
-  name: "g-calendar",
+  name: 'lgsn-calendar',
   props: {
     height: {
       type: Number,
-      default: 400,
+      default: 400
     },
     calData: {
       type: Array,
-      default: [],
+      default: []
     },
     tipsX: {
       type: Boolean,
-      default: true,
+      default: true
     },
     tipsY: {
       type: Boolean,
-      default: true,
-    },
+      default: true
+    }
   },
   data() {
     return {
       xData: [],
-      contentData: 31,
+      contentData: 31
     };
   },
   computed: {
@@ -110,7 +109,7 @@ export default {
     },
     viewHeight() {
       return `${this.height - 61}px`;
-    },
+    }
   },
   created() {
     this.init();
@@ -124,22 +123,21 @@ export default {
       this.$refs.calendarX.scrollLeft = e.target.scrollLeft;
     },
     hideTips() {
-      this.tipsX ? (this.$refs.tipsX.style.display = "none") : "";
-      this.tipsY ? (this.$refs.tipsY.style.display = "none") : "";
+      this.tipsX ? (this.$refs.tipsX.style.display = 'none') : '';
+      this.tipsY ? (this.$refs.tipsY.style.display = 'none') : '';
     },
     showTips() {
-      this.tipsX ? (this.$refs.tipsX.style.display = "block") : "";
-      this.tipsY ? (this.$refs.tipsY.style.display = "block") : "";
+      this.tipsX ? (this.$refs.tipsX.style.display = 'block') : '';
+      this.tipsY ? (this.$refs.tipsY.style.display = 'block') : '';
     },
     moveTips(e) {
-      console.log(e.target.offsetLeft);
       this.tipsX
         ? (this.$refs.tipsX.style.top = `${e.target.offsetTop}px`)
-        : "";
+        : '';
       this.tipsY
         ? (this.$refs.tipsY.style.left = `${e.target.offsetLeft}px`)
-        : "";
-    },
-  },
+        : '';
+    }
+  }
 };
 </script>

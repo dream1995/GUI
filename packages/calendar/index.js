@@ -1,7 +1,7 @@
-import GCalendar from './src/calendar';
+import LgsnCalendar from './src/calendar';
 
-GCalendar.install = function(Vue) {
-  Vue.component(GCalendar.name, GCalendar);
+LgsnCalendar.install = function(Vue) {
+  Vue.component(LgsnCalendar.name, LgsnCalendar);
 };
 
-export default GCalendar;
+export default LgsnCalendar;

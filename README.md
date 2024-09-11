@@ -17,9 +17,9 @@ Vue.use(lgsn)
 
 // 或者
 import {
-  GCalendar,
+  LgsnCalendar,
   // ...
 } from 'lgsn-ui'
 
-Vue.component(GCalendar.name, GCalendar)
+Vue.component(LgsnCalendar.name, LgsnCalendar)
 ```

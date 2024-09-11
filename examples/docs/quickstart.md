@@ -26,11 +26,11 @@ new Vue({
 
 ```javascript
 import Vue from 'vue';
-import { GCalendar } from 'lgsn-ui';
+import { LgsnCalendar } from 'lgsn-ui';
 import App from './App.vue';
 import 'lgsn-ui/component/src/index.css'
 
-Vue.component(GCalendar.name, GCalendar);
+Vue.component(LgsnCalendar.name, LgsnCalendar);
 
 new Vue({
   el: '#app',

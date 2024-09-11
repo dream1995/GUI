@@ -1,7 +1,15 @@
 /**
  * 时间转换
  **/
-const weekArray = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+const weekArray = [
+  "星期日",
+  "星期一",
+  "星期二",
+  "星期三",
+  "星期四",
+  "星期五",
+  "星期六",
+];
 
 const currentMonth = (date) => {
   let currentDate = new Date(date);
@@ -39,16 +47,13 @@ const getMonth = (date) => {
   let data = [];
   for (let i = 1; i <= monthNumber; i++) {
     data.push({
-      'index': i,
-      'day': `${m}-${i > 9 ? i : '0' + i}`,
-      'week': getWeek(date, i),
-      'current': isToday(date, i)
+      index: i,
+      day: `${m}-${i > 9 ? i : "0" + i}`,
+      week: getWeek(date, i),
+      current: isToday(date, i),
     });
   }
-  ;
-  return {data, monthNumber};
+  return { data, monthNumber };
 };
 
-export {
-  getMonth
-};
+export { getMonth };

@@ -63,8 +63,10 @@
                   children: []
                 },
               ]
-             arrayData.forEach(v => {
-              for(let i=0; i<31; i++) {
+              const date = new Date();
+              const month = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate()
+              arrayData.forEach(v => {
+              for(let i=0; i<=month; i++) {
                 v.children.push({
                   value: i,
                   label: `${v.label}收入${Math.round(Math.random()*1000)}元`
